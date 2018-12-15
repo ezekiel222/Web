@@ -37,6 +37,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
+gem 'font-awesome-sass', '~> 5.5.0'
+gem 'bootstrap-sass-extras', '~> 0.0.2'
+gem 'devise', '~> 4.2'
+gem 'simple_form'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -60,5 +65,10 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+group :production do
+
+  gem 'rails_12factor', '~> 0.0.3'
+  gem 'pg'
+end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
