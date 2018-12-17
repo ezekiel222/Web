@@ -1,0 +1,8 @@
+<h1>Editar Comentario</h1>
+<%= simple_form_for ([@article, @comment]) do |f|%>
+
+<%= f.input :body%>
+
+<%= f.submit "Post"%>
+
+<% end %>

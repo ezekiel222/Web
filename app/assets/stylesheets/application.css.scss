@@ -15,8 +15,14 @@
 
  */
 
+@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "footer";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "yeti";
+
+
+body {
+  padding-bottom: 125px
+}
