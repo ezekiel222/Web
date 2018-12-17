@@ -150,6 +150,7 @@
           <div class="card my-4">
             <h5 class="card-header">Articulos recientes</h5>
             <% @articles.each do |a| %>
+            Created by: <%= a.user.username %> <br />
             <strong><%= link_to a.title, a %></strong>
             <p><%=truncate (a.body) %></p>
             <% end %>
